@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Robot</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <script type="text/javascript" src="js/lib/jquery-2.2.1.min.js"></script>
+    
+    <script type="text/javascript" src="js/touchpad.js"></script>
+    <style>
+    	*{
+    		padding: 0px;
+    		margin: 0px;
+    	}
+    	#touchpad {
+    		border: 1px solid red;
+    		width: 100%;
+    	}
+    </style>
+</head>
+<body>
+   	<div id="touchpad">
+   	</div>
+    <script>
+    	$(function () {
+    		$("#touchpad").height($(document).height() * 95/100);
+    	});
+    </script>
+</body>
+</html>
